@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./PrimaryBtn.module.css";
 
 export default function PrimaryBtn(props) {

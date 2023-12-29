@@ -36,7 +36,7 @@ export async function getUsers(req, res, next) {
 export async function createUser(req, res, next) {
   try {
     const { name, lastName, email, password, phone, isAdmin } = req.body;
-    const users = new Course({
+    const user = new Users({
       name: name,
       lastName: lastName,
       email: email,
@@ -44,9 +44,11 @@ export async function createUser(req, res, next) {
       phone: phone,
       isAdmin: isAdmin,
     });
-    await course.save();
-    res.json(course);
+    await user.save();
+    // I shouldn't send password to the user
+    res.json(user);
   } catch (e) {
+    console.log(e);
     next(
       new HttpError(
         "unexpected problem occurred",

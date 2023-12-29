@@ -1,3 +1,7 @@
+import PrimaryBtn from "../../components/PrimaryBtn/PrimaryBtn.jsx";
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <PrimaryBtn text="Register" clickfn={() => console.log("something")} />
+  );
 }

@@ -1,5 +1,5 @@
-import Users from "../models/Users";
-import { StatusCode } from "../util/Http";
+import Users from "../models/Users.js";
+import { StatusCode } from "../util/Http.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
