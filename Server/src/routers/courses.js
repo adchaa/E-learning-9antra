@@ -6,12 +6,13 @@ import {
   getCourses,
   updateCourse,
 } from "../controllers/courses.js";
+import { isAdmin } from "../middleware/auth.js";
 
 const router = Router();
 
-router.patch("/:id", updateCourse);
-router.delete("/:id", deleteCourse);
-router.post("/", createCourse);
+router.patch("/:id", isAdmin, updateCourse);
+router.delete("/:id", isAdmin, deleteCourse);
+router.post("/", isAdmin, createCourse);
 router.get("/:id", getCourseById);
 router.get("/", getCourses);
 
