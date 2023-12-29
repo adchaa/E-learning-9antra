@@ -1,3 +1,9 @@
+import Contact from "../../components/Contact/Contact";
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <div>
+      <Contact />
+    </div>
+  );
 }

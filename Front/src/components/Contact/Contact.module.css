@@ -1,0 +1,21 @@
+.title {
+  margin-bottom: 5px;
+  color: black;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  justify-content: center;
+  background-color: #f9b454;
+  border-radius: 50px;
+  margin: 50px;
+  padding: 20px;
+  width: 600px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
