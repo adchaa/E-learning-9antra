@@ -45,7 +45,7 @@ export async function createUser(req, res, next) {
       isAdmin: isAdmin,
     });
     await user.save();
-    // I shouldn't send password to the user
+    //! I shouldn't send the password but just for testing
     res.json(user);
   } catch (e) {
     console.log(e);
