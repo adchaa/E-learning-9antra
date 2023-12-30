@@ -1,7 +1,10 @@
-import PrimaryBtn from "../../components/PrimaryBtn/PrimaryBtn.jsx";
+import Cards from "../../components/Cards/Cards.jsx";
 
 export default function Home() {
   return (
-    <PrimaryBtn text="Register" clickfn={() => console.log("something")} />
+    <div>
+      <Cards />
+      <p>something</p>
+    </div>
   );
 }

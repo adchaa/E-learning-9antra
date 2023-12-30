@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 import Users from "../models/Users.js";
 
 export async function isAdmin(req, res, next) {
+  //! just for testing
+  return next();
   const authHeader = req.headers["authorization"];
   const token = authHeader?.split(" ")[1];
   if (!token)

@@ -1,0 +1,36 @@
+.cards{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto;
+  place-items: center;
+  row-gap: 80px;
+}
+.cardTitle {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.cardPrice {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #b03266;
+  margin-top: 5px;
+}
+.card img{
+  width: 27vw;
+  height: 300px;
+  object-fit: cover;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 80px;
+}
+
+.title{
+  font-size: 45px;
+}
