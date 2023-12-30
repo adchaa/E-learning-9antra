@@ -1,4 +1,4 @@
-import styles from "./SendBtn.module.css";
+import styles from "./Sendbtn.module.css";
 export default function SendBtn(props) {
   const { textmessage } = props;
   return (

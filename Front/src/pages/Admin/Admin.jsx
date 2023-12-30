@@ -3,6 +3,7 @@ import Table from "../../components/Table/Table";
 import styles from "./Admin.module.css";
 import axios from "axios";
 import ImagePreview from "../../components/ImagePreview/ImagePreview";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Admin() {
   const [users, setUsers] = useState([]);
@@ -47,21 +48,24 @@ export default function Admin() {
     });
   }, []);
   return (
-    <div className={styles.container}>
-      <Table
-        title="Users"
-        updateFn={updateUser}
-        deleteFn={deleteUser}
-        headers={usersHeaders}
-        values={users.length !== 0 ? users : []}
-      />
-      <Table
-        title="Courses"
-        updateFn={updateCourse}
-        deleteFn={deleteCourse}
-        headers={coursesHeaders}
-        values={courses.length !== 0 ? courses : []}
-      />
-    </div>
+    <>
+      <Navbar />
+      <div className={styles.container}>
+        <Table
+          title="Users"
+          updateFn={updateUser}
+          deleteFn={deleteUser}
+          headers={usersHeaders}
+          values={users.length !== 0 ? users : []}
+        />
+        <Table
+          title="Courses"
+          updateFn={updateCourse}
+          deleteFn={deleteCourse}
+          headers={coursesHeaders}
+          values={courses.length !== 0 ? courses : []}
+        />
+      </div>
+    </>
   );
 }
