@@ -1,10 +1,13 @@
-import Cards from "../../components/Cards/Cards.jsx";
+import Contact from "../../components/Contact/Contact";
+import HomeImg from "../../components/HomeImg/HomeImg";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Cards />
-      <p>something</p>
+      <Navbar />
+      <HomeImg />
+      <Contact />
     </div>
   );
 }

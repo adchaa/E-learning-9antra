@@ -1,0 +1,13 @@
+.title {
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+}
+.body {
+  border-radius: 10rem;
+  background-color: #fde7c9;
+  border: none;
+  width: 300px;
+  height: 45px;
+  padding: 10px 20px;
+}

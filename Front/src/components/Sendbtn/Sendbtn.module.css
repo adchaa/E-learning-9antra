@@ -1,0 +1,11 @@
+.send {
+  border-radius: 5px;
+  color: white;
+  background-color: #af2f64;
+  border: none;
+  text-align: center;
+  width: 150px;
+  height: 20px;
+  padding: 2px 20px;
+  margin-top: 10px;
+}
